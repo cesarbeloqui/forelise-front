@@ -7,11 +7,11 @@ const Footer = () => {
   const { lista1, redes } = footer;
   console.log(data);
   return (
-    <footer className="footer w-full container-footer bg-fondoMarron sm:h-[11.8rem] h-[45vh]">
+    <footer className="footer w-full container-footer bg-fondoMarron sm:h-[11.8rem] h-[50vh]">
       <div></div>
       <div className="logo sm:m-0">
         <a href="/#">
-          <img src={logo} alt="" className="w-[7.85rem]" />
+          <img src={logo} alt="" className="w-[5rem] sm:w-[7.85rem]" />
         </a>
       </div>
       <div></div>
@@ -30,10 +30,10 @@ const Footer = () => {
               >
                 <img
                   src={item.icon}
-                  className="w-[9vw] sm:w-[1.25rem] mr-4"
+                  className="w-[1.7rem] sm:w-[1.25rem] mr-4"
                   alt={item.titulo}
                 />
-                <p className="text-letraBlanca sm:text-sm text-[3.4vw]">
+                <p className="text-letraBlanca sm:text-sm text-[1rem]">
                   {item.titulo}
                 </p>
               </a>
@@ -50,7 +50,7 @@ const Footer = () => {
             >
               <img
                 src={item.icon}
-                className="sm:w-[1.25rem] mr-4 w-[8.5vw]"
+                className="sm:w-[1.25rem] mr-4 w-[1.7rem]"
                 key={index}
               />
             </a>
