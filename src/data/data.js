@@ -2,6 +2,12 @@ import product1 from "../assets/product1.png";
 import product2 from "../assets/product2.png";
 import product3 from "../assets/product3.png";
 import product4 from "../assets/product4.png";
+import iconUbic from "../assets/iconUbic.svg"
+import iconTel from "../assets/iconWpFooter.svg"
+import iconMail from "../assets/iconEmail.svg"
+import fb from "../assets/fb.svg"
+import ig from "../assets/ig.svg"
+import lin from "../assets/in.svg"
 
 export default {
   nuestraEmpresa: {
@@ -66,5 +72,42 @@ Hoy, "For Elise" cuenta con tres puntos de venta, manteniendo la esencia origina
     titulo: "Contacto",
     texto:
       "Escribinos a {r}info@confiteriaforelise.com{/r} o completá el formulario:",
+  },
+  footer: {
+    lista1: [
+      {
+        titulo: "La Plata",
+        icon: iconUbic,
+        href: "https://maps.app.goo.gl/TjeaQ2Mgr2in8QMW8",
+      },
+      {
+        titulo: "+54 9 11 3560 1328",
+        icon: iconTel,
+        href: "https://wa.me/5491135601328",
+      },
+      {
+        titulo: "info@confiteriaforelise.com",
+        icon: iconMail,
+        href: "mailto:info@confiteriaforelise.com",
+      },
+    ],
+    redes: [
+      {
+        link: "",
+        icon: fb,
+      },
+      {
+        link: "",
+        icon: ig,
+      },
+      {
+        link: "",
+        icon: lin,
+      },
+      /*         {
+          link: "",
+          icon: "/icons/icon-wp.svg",
+        }, */
+    ],
   },
 };
