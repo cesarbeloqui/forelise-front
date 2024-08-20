@@ -1,8 +1,5 @@
-# React + Vite
+# Landing Page para For Elise
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta es una landing page para For Elise panadería y confiteria.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Posee un presentacion de productos, link a lista de precios mapa interactivo y un formulario de contacto.
