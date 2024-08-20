@@ -8,10 +8,12 @@ import Productos from "./sections/Productos/Productos";
 import Sucursales from "./sections/Sucursales/Sucursales";
 import Mapa from "./sections/Mapa/Mapa";
 import QueresSerParte from "./sections/QueresSerParte/QueresSerParte";
+import Whatsapp from "./components/Whatsapp/Whatsapp";
 
 function App() {
   return (
     <div className="body">
+      <Whatsapp/>
       <Navbar />
       <Carrusel />
       <NuestraEmpresa />
