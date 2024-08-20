@@ -12,7 +12,11 @@ export default {
       naranjaBotonYSubProductos: "#F6994D",
       letraMarron: "#655442",
     },
-    extend: {},
+    extend: {
+      borderColor: {
+        transparent: "transparent",
+      },
+    },
     fontFamily: {
       sans: ["Noto Sans", "sans-serif"],
     },
