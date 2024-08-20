@@ -81,7 +81,7 @@ const Navbar = () => {
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
         <div className="flex h-24 justify-between">
           <div className="flex w-full justify-between">
-            <div className="flex pl-20 flex-shrink-0 items-center">
+            <div className="flex sm:pl-20 flex-shrink-0 items-center">
               <a href="/#">
                 <img
                   className="block h-auto w-20 lg:hidden"

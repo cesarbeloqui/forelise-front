@@ -7,9 +7,9 @@ const Footer = () => {
   const { lista1, redes } = footer;
   console.log(data);
   return (
-    <footer className="footer w-full container-footer bg-fondoMarron h-[11.8rem]">
+    <footer className="footer w-full container-footer bg-fondoMarron sm:h-[11.8rem] h-[45vh]">
       <div></div>
-      <div className="logo">
+      <div className="logo sm:m-0">
         <a href="/#">
           <img src={logo} alt="" className="w-[7.85rem]" />
         </a>
