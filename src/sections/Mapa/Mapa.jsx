@@ -1,6 +1,10 @@
+import mapa from "../../assets/mapa.jpg";
+
 const Mapa = () => {
   return (
-    <div>Mapa</div>
-  )
-}
-export default Mapa
+    <div>
+      <img src={mapa} alt="" className="w-full" />
+    </div>
+  );
+};
+export default Mapa;
