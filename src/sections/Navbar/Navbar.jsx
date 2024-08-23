@@ -8,6 +8,7 @@ const navigationItems = [
   { name: "Inicio", href: "#", current: false },
   { name: "Nuestra Empresa", href: "#nuestra-empresa", current: false },
   { name: "Quiénes somos", href: "#quienes-somos", current: false },
+  { name: "Productos", href: "#productos", current: false },
   {
     name: "Sucursales",
     href: "#sucursales",
