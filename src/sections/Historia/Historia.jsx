@@ -6,7 +6,7 @@ const Historia = () => {
       <div className="flex flex-col sm:flex-row justify-center items-center">
         {" "}
         {/* Agrega justify-center e items-center */}
-        <div className="flex justify-center items-center">
+        <div className="flex px-5 justify-left items-center sm:w-auto w-full">
           <h2 className="text-5xl font-extrabold sm:text-stroke-1-letraClarita text-stroke-1-fondoMarron texto">
             Quiénes somos
           </h2>
