@@ -4,14 +4,14 @@ import { CheckCircleIcon, XCircleIcon } from "@heroicons/react/24/solid";
 import emailjs from "@emailjs/browser";
 
 const Contacto = () => {
-    const form = useRef();
-    const YOUR_SERVICE_ID = import.meta.env.VITE_YOUR_SERVICE_ID;
-    const YOUR_TEMPLATE_ID = import.meta.env.VITE_YOUR_TEMPLATE_ID;
-      const YOUR_PUBLIC_KEY = import.meta.env.VITE_YOUR_PUBLIC_KEY;
-      const [enviando, setEnviando] = useState(false);
-      const [enviado, setEnviado] = useState(false);
-      const [noEnviado, setNoEnviado] = useState(false);
-      const [mostrarBoton, setMostrarBoton] = useState(true);
+  const form = useRef();
+  const YOUR_SERVICE_ID = import.meta.env.VITE_YOUR_SERVICE_ID;
+  const YOUR_TEMPLATE_ID = import.meta.env.VITE_YOUR_TEMPLATE_ID;
+  const YOUR_PUBLIC_KEY = import.meta.env.VITE_YOUR_PUBLIC_KEY;
+  const [enviando, setEnviando] = useState(false);
+  const [enviado, setEnviado] = useState(false);
+  const [noEnviado, setNoEnviado] = useState(false);
+  const [mostrarBoton, setMostrarBoton] = useState(true);
   const sendEmail = (e) => {
     e.preventDefault();
     // Aquí deberías recoger los datos del formulario
@@ -149,10 +149,12 @@ const Contacto = () => {
             <textarea
               id="message"
               name="message"
-              rows="4"
+              rows="6"
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-none shadow-sm focus:outline-none focus:ring-naranjaNav focus:border-naranjaNav ring-naranjaNav placeholder:text-placeholderColor placeholder:focus:text-placeholderColorFocus resize-none"
               placeholder="Mensaje, consulta o sugerencia"
               required
+              maxLength={500}
+              minLength={50}
             ></textarea>
           </div>
           <div>
