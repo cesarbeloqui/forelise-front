@@ -1,7 +1,7 @@
 const NuestraEmpresa = () => {
   return (
     <section
-      className="bg-white py-10 scroll-nuestra-empresa"
+      className="bg-white py-10"
       id="nuestra-empresa"
     >
       <div className="container mx-auto px-4 flex flex-col sm:flex-row items-start sm:items-center justify-center">

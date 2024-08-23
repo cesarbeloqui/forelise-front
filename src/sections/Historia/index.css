@@ -1,0 +1,11 @@
+.texto {
+  writing-mode: horizontal-tb;
+}
+
+@media (min-width: 640px) {
+  .texto {
+    writing-mode: vertical-rl;
+    padding-bottom: 1rem;
+    transform: rotate(180deg);
+  }
+}

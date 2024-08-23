@@ -1,6 +1,139 @@
+import "./index.css";
+
 const Historia = () => {
   return (
-    <div>Historia</div>
-  )
-}
-export default Historia
+    <section className="bg-fondoBeige py-10" id="quienes-somos">
+      <div className="flex flex-col sm:flex-row justify-center items-center">
+        {" "}
+        {/* Agrega justify-center e items-center */}
+        <div className="flex justify-center items-center">
+          <h2 className="text-5xl font-extrabold text-stroke-1-letraClarita texto">
+            Quiénes somos
+          </h2>
+          {/* Agrega bg-gray-400 y dimensiones para ver el elemento */}
+        </div>
+        <div className="flex flex-col items-left justify-center sm:w-[68.5%] p-5">
+          <div className="flex justify-left mb-2">
+            <h2 className="text-5xl font-extrabold text-stroke-1-letraClarita">
+              DESDE 1990
+            </h2>
+          </div>
+          <div className="flex justify-left">
+            <h2 className="text-3xl font-semibold text-left mb-5 text-letraMarron">
+              Historia de Panadería "For Elise"
+            </h2>
+          </div>
+          <div className="flex flex-col sm:flex-row justify-left">
+            <div className="sm:w-1/2">
+              <p className="sm:mt-0 mr-2 text-base text-letraMarron hidden sm:flex">
+                En 1990, Peto y Elisa, un matrimonio apasionado por la
+                panadería, fundaron su negocio en un barrio de La Plata. Con
+                recetas caseras y dedicación inquebrantable, establecieron una
+                pequeña panadería que se convirtió en un pilar de la comunidad
+                local, conocida por su pan fresco y productos de panadería.
+                Durante casi 30 años, construyeron una sólida reputación basada
+                en la calidad y el servicio excepcional, convirtiendo su
+                panadería en un lugar de encuentro para vecinos y amigos. En
+                2018, su hijo, inspirado por el legado de sus padres y en
+              </p>
+              <p className="sm:mt-4 text-base text-letraMarron flex sm:hidden">
+                En 1990, Peto y Elisa, un matrimonio apasionado por la
+                panadería, fundaron su negocio en un barrio de La Plata. Con
+                recetas caseras y dedicación inquebrantable, establecieron una
+                pequeña panadería que se convirtió en un pilar de la comunidad
+                local, conocida por su pan fresco y productos de panadería.
+                Durante casi 30 años, construyeron una sólida reputación basada
+                en la calidad y el servicio excepcional, convirtiendo su
+                panadería en un lugar de encuentro para vecinos y amigos. En
+                2018, su hijo, inspirado por el legado de sus padres y en honor
+                a su madre Elisa, inauguró "For Elise", la primera sucursal
+                fuera del barrio original. Hoy, "For Elise" cuenta con tres
+                puntos de venta, manteniendo la esencia original y enfocándose
+                en profesionalizar sus operaciones para ofrecer la mejor
+                experiencia posible a sus clientes. La familia sigue trabajando
+                con pasión y dedicación para preservar el legado y adaptarse a
+                las demandas del mercado moderno. "For Elise" continúa
+                creciendo, innovando y manteniendo el calor humano que ha
+                definido su panadería a lo largo de las décadas.
+              </p>
+            </div>
+            <div className="sm:w-1/2 mt-6 sm:mt-0 sm:ml-5 hidden sm:flex">
+              <p className="text-base text-letraMarron">
+                honor a su madre Elisa, inauguró "For Elise", la primera
+                sucursal fuera del barrio original. Hoy, "For Elise" cuenta con
+                tres puntos de venta, manteniendo la esencia original y
+                enfocándose en profesionalizar sus operaciones para ofrecer la
+                mejor experiencia posible a sus clientes. La familia sigue
+                trabajando con pasión y dedicación para preservar el legado y
+                adaptarse a las demandas del mercado moderno. "For Elise"
+                continúa creciendo, innovando y manteniendo el calor humano que
+                ha definido su panadería a lo largo de las décadas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+export default Historia;
+/* 
+          <div className="flex justify-left sm:w-[68.5%]">
+            <h2 className="text-5xl font-extrabold text-stroke-1-letraClarita">
+              DESDE 1990
+            </h2>
+          </div>
+          <div className="flex justify-left sm:w-[68.5%]">
+            <h2 className="text-3xl font-semibold text-left mb-8 text-letraMarron">
+              Historia de Panadería "For Elise"
+            </h2>
+          </div>
+          <div className="flex flex-col sm:flex-row justify-left">
+            <div className="sm:w-1/3">
+              <p className="sm:mt-0 mr-2 text-base text-letraMarron hidden sm:flex">
+                En 1990, Peto y Elisa, un matrimonio apasionado por la
+                panadería, fundaron su negocio en un barrio de La Plata. Con
+                recetas caseras y dedicación inquebrantable, establecieron una
+                pequeña panadería que se convirtió en un pilar de la comunidad
+                local, conocida por su pan fresco y productos de panadería.
+                Durante casi 30 años, construyeron una sólida reputación basada
+                en la calidad y el servicio excepcional, convirtiendo su
+                panadería en un lugar de encuentro para vecinos y amigos. En
+                2018, su hijo, inspirado por el legado de sus padres y en
+              </p>
+              <p className="sm:mt-4 text-base text-letraMarron flex sm:hidden">
+                En 1990, Peto y Elisa, un matrimonio apasionado por la
+                panadería, fundaron su negocio en un barrio de La Plata. Con
+                recetas caseras y dedicación inquebrantable, establecieron una
+                pequeña panadería que se convirtió en un pilar de la comunidad
+                local, conocida por su pan fresco y productos de panadería.
+                Durante casi 30 años, construyeron una sólida reputación basada
+                en la calidad y el servicio excepcional, convirtiendo su
+                panadería en un lugar de encuentro para vecinos y amigos. En
+                2018, su hijo, inspirado por el legado de sus padres y en honor
+                a su madre Elisa, inauguró "For Elise", la primera sucursal
+                fuera del barrio original. Hoy, "For Elise" cuenta con tres
+                puntos de venta, manteniendo la esencia original y enfocándose
+                en profesionalizar sus operaciones para ofrecer la mejor
+                experiencia posible a sus clientes. La familia sigue trabajando
+                con pasión y dedicación para preservar el legado y adaptarse a
+                las demandas del mercado moderno. "For Elise" continúa
+                creciendo, innovando y manteniendo el calor humano que ha
+                definido su panadería a lo largo de las décadas.
+              </p>
+            </div>
+            <div className="sm:w-1/3 mt-6 sm:mt-0 sm:ml-5 hidden sm:flex">
+              <p className="text-base text-letraMarron">
+                honor a su madre Elisa, inauguró "For Elise", la primera
+                sucursal fuera del barrio original. Hoy, "For Elise" cuenta con
+                tres puntos de venta, manteniendo la esencia original y
+                enfocándose en profesionalizar sus operaciones para ofrecer la
+                mejor experiencia posible a sus clientes. La familia sigue
+                trabajando con pasión y dedicación para preservar el legado y
+                adaptarse a las demandas del mercado moderno. "For Elise"
+                continúa creciendo, innovando y manteniendo el calor humano que
+                ha definido su panadería a lo largo de las décadas.
+              </p>
+            </div>
+          </div>
+*/

@@ -25,7 +25,13 @@ html {
   #nuestra-empresa {
     scroll-margin-top: 4rem !important;
   }
+  #quienes-somos {
+    scroll-margin-top: 4rem !important;
+  }
 }
 #nuestra-empresa {
+  scroll-margin-top: 4rem !important;
+}
+#quienes-somos {
   scroll-margin-top: 4rem !important;
 }
