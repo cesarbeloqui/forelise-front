@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-
+import flowbite from "flowbite-react/tailwind";
 
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", flowbite.content()],
   theme: {
     colors: {
       fondoMarron: "#3E2913",
@@ -23,5 +23,5 @@ export default {
       sans: ["Noto Sans", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [flowbite.plugin()],
 };

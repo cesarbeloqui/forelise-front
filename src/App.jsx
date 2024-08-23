@@ -1,5 +1,5 @@
 import Footer from "./sections/Footer/Footer";
-import Navbar from "./sections/Navabar/Navbar";
+import Navbar from "./sections/Navbar/Navbar";
 import Carrusel from "./sections/Carrusel/Carrusel";
 import NuestraEmpresa from "./sections/NuestraEmpresa/NuestraEmpresa";
 import Sabores from "./sections/Sabores/Sabores";

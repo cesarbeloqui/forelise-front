@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import "./index.css";
 import logoNav from "../../assets/logoNav.svg";
 const classNames = (...classes) => classes.filter(Boolean).join(" ");
 
@@ -79,17 +80,17 @@ const Navbar = () => {
   return (
     <nav className="bg-fondoMarron sticky top-0 z-50">
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
-        <div className="flex h-24 justify-between">
+        <div className="flex justify-between nav">
           <div className="flex w-full justify-between">
             <div className="flex sm:pl-20 flex-shrink-0 items-center">
               <a href="/#">
                 <img
-                  className="block h-auto w-20 lg:hidden"
+                  className="block h-auto lg:hidden logoNav"
                   src={logoNav}
                   alt="ForElise"
                 />
                 <img
-                  className="hidden h-auto w-20 lg:block"
+                  className="hidden h-auto lg:block logoNav"
                   src={logoNav}
                   alt="ForElise"
                 />
