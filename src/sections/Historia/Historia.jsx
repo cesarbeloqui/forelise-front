@@ -7,14 +7,14 @@ const Historia = () => {
         {" "}
         {/* Agrega justify-center e items-center */}
         <div className="flex justify-center items-center">
-          <h2 className="text-5xl font-extrabold text-stroke-1-letraClarita texto">
+          <h2 className="text-5xl font-extrabold sm:text-stroke-1-letraClarita text-stroke-1-fondoMarron texto">
             Quiénes somos
           </h2>
           {/* Agrega bg-gray-400 y dimensiones para ver el elemento */}
         </div>
-        <div className="flex flex-col items-left justify-center sm:w-[68.5%] p-5">
-          <div className="flex justify-left mb-2">
-            <h2 className="text-5xl font-extrabold text-stroke-1-letraClarita">
+        <div className="flex flex-col items-left justify-center sm:w-[68.5%] sm:p-5 py-0 px-5">
+          <div className="flex justify-left sm:mb-2">
+            <h2 className="text-3xl sm:text-5xl font-extrabold text-stroke-1-letraClarita">
               DESDE 1990
             </h2>
           </div>
