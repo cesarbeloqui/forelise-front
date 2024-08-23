@@ -1,0 +1,27 @@
+.leaflet-container {
+  width: 100% !important;
+  height: 50vh !important;
+  z-index: 0;
+  font-family: inherit !important;
+}
+a[href="https://leafletjs.com"][title="A JavaScript library for interactive maps"]
+{
+  display: none;
+}
+.leaflet-control-attribution > span {
+  /* Aquí puedes agregar el estilo que necesites */
+  display: none !important;
+}
+.leaflet-popup-content p {
+  margin: 0;
+}
+.leaflet-popup-content {
+    margin: 0;
+    line-height: 1.3;
+    font-size: 13px;
+    font-size: 1.08333em;
+    min-height: 1px;
+}
+.popup {
+    margin: 13px 24px 13px 20px !important;
+}

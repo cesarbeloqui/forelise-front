@@ -5,8 +5,8 @@ import emailjs from "@emailjs/browser";
 
 const Contacto = () => {
     const form = useRef();
-      const YOUR_SERVICE_ID = import.meta.env.VITE_YOUR_SERVICE_ID;
-      const YOUR_TEMPLATE_ID = import.meta.env.VITE_YOUR_TEMPLATE_ID;
+    const YOUR_SERVICE_ID = import.meta.env.VITE_YOUR_SERVICE_ID;
+    const YOUR_TEMPLATE_ID = import.meta.env.VITE_YOUR_TEMPLATE_ID;
       const YOUR_PUBLIC_KEY = import.meta.env.VITE_YOUR_PUBLIC_KEY;
       const [enviando, setEnviando] = useState(false);
       const [enviado, setEnviado] = useState(false);
