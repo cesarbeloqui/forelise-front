@@ -61,7 +61,10 @@ const Historia = () => {
                 </span>
                 <br />
                 <br />
-                <span>
+                <span
+                  className="font-extrabold 
+                italic"
+                >
                   "For Elise" continúa creciendo, innovando y manteniendo el
                   calor humano que ha definido su panadería a lo largo de las
                   décadas.
