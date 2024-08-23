@@ -23,13 +23,13 @@ const Productos = () => {
     },
   ];
   return (
-    <section id="productos" className="bg-fondoBeige py-8 px-28">
+    <section id="productos" className="bg-fondoBeige py-8 sm:px-28 p-4">
       <h2 className="text-3xl font-medium mb-6 text-left ml-4 pr-24 text-letraMarron   border-naranjaBotonYSubProductos border-double inline-block border-b-4">
         Productos
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
         {products.map((product) => (
-          <div key={product.title} className="bg-white shadow-lg">
+          <div key={product.title} className="bg-fondoBlanco shadow-lg">
             <img
               src={product.image}
               alt={product.title}
@@ -44,9 +44,16 @@ const Productos = () => {
         ))}
 
         <div className="flex justify-center mt-8 col-span-1 sm:col-span-2 sm:col-start-1 lg:col-span-2 lg:col-start-2">
-          <button className="bg-[#F58D3F] text-white py-2 px-6 rounded-lg shadow-md hover:bg-[#e07c33] w-full">
-            Ver precios
-          </button>
+          <a
+            href="https://docs.google.com/spreadsheets/d/1qSa16uloLnK0pwb4CeeTtM3jOKvw9WmFBc1cKj3OjN4"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full"
+          >
+            <button className="bg-naranjaBotonYSubProductos text-white py-2 px-6 rounded-lg shadow-md transition hover:bg-naranjaNav w-full">
+              Ver precios
+            </button>
+          </a>
         </div>
       </div>
     </section>
