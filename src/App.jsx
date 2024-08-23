@@ -9,6 +9,7 @@ import Sucursales from "./sections/Sucursales/Sucursales";
 import Mapa from "./sections/Mapa/Mapa";
 import QueresSerParte from "./sections/QueresSerParte/QueresSerParte";
 import Whatsapp from "./components/Whatsapp/Whatsapp";
+import Contacto from "./sections/Contacto/Contacto";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
       <Sucursales />
       <Mapa />
       <QueresSerParte />
-      
+      <Contacto/>
       <Footer />
     </div>
   );

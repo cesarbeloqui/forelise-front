@@ -33,6 +33,8 @@ export default {
       naranjaNav: "#F47F20",
       naranjaBotonYSubProductos: "#F6994D",
       letraMarron: "#655442",
+      placeholderColor: "#B2A9A1",
+      placeholderColorFocus: "#655442",
     },
     extend: {
       borderColor: {
