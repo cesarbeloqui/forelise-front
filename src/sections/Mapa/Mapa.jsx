@@ -2,7 +2,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "./index.css";
 import { Icon } from "leaflet";
-import iconU from "../../assets/ForEliseUbic.svg";
+import iconU from "@/assets/ForEliseUbic.svg";
 import { useState, useEffect } from "react";
 
 const icon = new Icon({
@@ -55,7 +55,7 @@ const MapComponent = () => {
 
   return (
     <div className="relative">
-      <div className="z-50 absolute right-2 bottom-2 sm:right-16 sm:bottom-12">
+      <div className="absolute right-2 bottom-2 sm:right-16 sm:bottom-12 z-10">
         <h1 className="text-4xl font-bold text-stroke-1-fondoMarron">
           Puntos de venta
         </h1>

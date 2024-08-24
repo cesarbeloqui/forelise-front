@@ -14,7 +14,7 @@ import Contacto from "./sections/Contacto/Contacto";
 function App() {
   return (
     <div className="body">
-      <Whatsapp/>
+      <Whatsapp />
       <Navbar />
       <Carrusel />
       <NuestraEmpresa />
@@ -24,7 +24,7 @@ function App() {
       <Sucursales />
       <Mapa />
       <QueresSerParte />
-      <Contacto/>
+      <Contacto />
       <Footer />
     </div>
   );

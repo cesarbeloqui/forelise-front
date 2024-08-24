@@ -40,6 +40,21 @@ export default {
       borderColor: {
         transparent: "transparent",
       },
+      keyframes: {
+        shake: {
+          "0%, 100%": { transform: "translateX(0)" },
+          "10%, 30%, 50%, 70%, 90%": { transform: "translateX(-10px)" },
+          "20%, 40%, 60%, 80%": { transform: "translateX(10px)" },
+        },
+        success: {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.05)" },
+        },
+      },
+      animation: {
+        shake: "shake 0.8s ease-in-out",
+        success: "success 0.5s ease-in-out",
+      },
     },
     fontFamily: {
       sans: ["Noto Sans", "sans-serif"],

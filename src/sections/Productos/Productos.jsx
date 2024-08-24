@@ -23,37 +23,42 @@ const Productos = () => {
     },
   ];
   return (
-    <section id="productos" className="bg-fondoBeige py-8 sm:px-28 p-4">
-      <h2 className="text-3xl font-medium mb-6 text-left ml-4 pr-24 text-letraMarron   border-naranjaBotonYSubProductos border-double inline-block border-b-4">
-        Productos
-      </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
-        {products.map((product) => (
-          <div key={product.title} className="bg-fondoBlanco shadow-lg">
-            <img
-              src={product.image}
-              alt={product.title}
-              className="w-full h-auto object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-xl font-medium text-center">
-                {product.title}
-              </h3>
+    <section id="productos" className="bg-fondoBeige py-8 sm:px-28">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl font-medium mb-8 text-left ml-4 pr-24 text-letraMarron   border-naranjaBotonYSubProductos border-double inline-block border-b-4">
+          Productos
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+          {products.map((product) => (
+            <div
+              key={product.title}
+              className="bg-fondoBlanco shadow-lg transition-transform duration-300 hover:scale-105"
+            >
+              <img
+                src={product.image}
+                alt={product.title}
+                className="w-full h-auto object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-xl font-medium text-center">
+                  {product.title}
+                </h3>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
 
-        <div className="flex justify-center mt-8 col-span-1 sm:col-span-2 sm:col-start-1 lg:col-span-2 lg:col-start-2">
-          <a
-            href="https://docs.google.com/spreadsheets/d/1qSa16uloLnK0pwb4CeeTtM3jOKvw9WmFBc1cKj3OjN4"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full"
-          >
-            <button className="bg-naranjaBotonYSubProductos text-white py-2 px-6 rounded-lg shadow-md transition hover:bg-naranjaNav w-full">
-              Ver precios
-            </button>
-          </a>
+          <div className="flex justify-center mt-8 col-span-1 sm:col-span-2 sm:col-start-1 lg:col-span-2 lg:col-start-2">
+            <a
+              href="https://docs.google.com/spreadsheets/d/1qSa16uloLnK0pwb4CeeTtM3jOKvw9WmFBc1cKj3OjN4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full"
+            >
+              <button className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-naranjaBotonYSubProductos hover:bg-naranjaNav focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-naranjaBotonYSubProductos transition-all duration-300 ease-in-out transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed">
+                Ver precios
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </section>
