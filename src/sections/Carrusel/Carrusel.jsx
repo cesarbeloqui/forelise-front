@@ -7,6 +7,8 @@ import product4 from "../../assets/4.png";
 import product5 from "../../assets/5.png";
 import product6 from "../../assets/6.png";
 import PropTypes from "prop-types";
+import { useState, lazy, useEffect } from "react";
+import LazyImage from "@/components/LazyImage/LazyImage";
 
 const customTheme = {
   scrollContainer: {
@@ -20,7 +22,7 @@ const customTheme = {
 };
 
 // Extracción de las imágenes
-const IMAGES = {
+const IMAGES2 = {
   mobile: [product1, product2, product3, product4, product5, product6],
   slider1: [product1, product2, product3],
   slider2: [product4, product5, product6],
@@ -34,29 +36,45 @@ const ImageCarousel = ({ images, className }) => (
   </Carousel>
 );
 
-const Carrusel = () => (
-  <>
-    <div className="sm:block sm:h-auto w-full hidden">
-      <ImageCarousel
-        images={[IMAGES.slider1, IMAGES.slider2]}
-        className="relative flex w-full"
-      />
-    </div>
-    <div className="h-auto sm:hidden">
-      <Carousel theme={customTheme} slideInterval={5000} pauseOnHover>
-        {IMAGES.mobile.map((imagen, index) => (
+const ImageCarouselMovil = ({ images, className }) => {
+  return (
+    <Carousel theme={customTheme} slideInterval={5000} pauseOnHover>
+      {images.mobile.map((imagen, index) => {
+        return (
           <div className="relative flex w-full" key={index}>
-            <img
-              src={imagen}
-              alt={`Imagen ${index + 1}`}
-              className="w-full h-auto"
-            />
+            <LazyImage src={imagen} alt={`Imagen ${index + 1}`} />
           </div>
-        ))}
-      </Carousel>
-    </div>
-  </>
-);
+        );
+      })}
+    </Carousel>
+  );
+};
+const Carrusel = ({ images }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Detectar si es mobile o no, y actualizar el estado
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Llamar para inicializar
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  return (
+    <>
+      {!isMobile ? (
+        <ImageCarousel
+          images={[IMAGES2.slider1, IMAGES2.slider2]}
+          className="relative flex w-full"
+        />
+      ) : (
+        <ImageCarouselMovil images={IMAGES2} />
+      )}
+    </>
+  );
+};
 ImageCarousel.propTypes = {
   images: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
   className: PropTypes.string,

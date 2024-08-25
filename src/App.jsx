@@ -16,7 +16,7 @@ function App() {
     <div className="body">
       <Whatsapp />
       <Navbar />
-      <Carrusel />
+      <Carrusel/>
       <NuestraEmpresa />
       <Sabores />
       <Historia />

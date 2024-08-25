@@ -156,7 +156,7 @@ useEffect(() => {
           Escribinos a{" "}
           <a
             href="mailto:info@confiteriaforelise.com"
-            className="text-naranjaNav italic"
+            className="text-naranjaNav inline-flex italic transition-transform duration-500 hover:scale-105 px-1"
           >
             info@confiteriaforelise.com
           </a>{" "}

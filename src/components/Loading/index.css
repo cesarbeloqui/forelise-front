@@ -1,0 +1,9 @@
+@keyframes ping-2 {
+    75%, 100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+.animate-ping-2 {
+    animation: ping-2 1.2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}

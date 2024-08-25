@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from "./counterSlice";
+import loadingReducer from "./loadingSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    loading: loadingReducer,
   },
 });

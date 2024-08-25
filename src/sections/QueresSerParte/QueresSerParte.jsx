@@ -8,7 +8,7 @@ const QueresSerParte = () => {
         Mandanos tu CV a{" "}
         <a
           href="mailto:rrhh@confiteriaforelise.com"
-          className="text-naranjaNav font-bold"
+          className="text-naranjaNav inline-flex font-bold transition-transform duration-500 hover:scale-105 px-1"
         >
           rrhh@confiteriaforelise.com
         </a>

@@ -45,7 +45,7 @@ const Historia = () => {
               ))}
             </AnimatedSection>
             <AnimatedSection>
-              <p className="font-extrabold italic">{data.cita}</p>
+              <p className="font-extrabold italic mt-4">{data.cita}</p>
             </AnimatedSection>
           </div>
         </div>
