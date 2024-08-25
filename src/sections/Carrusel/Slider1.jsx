@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
+import LazyImage from "@/components/LazyImage/LazyImage";
 
 const Slider1 = ({ imagenes, className }) => {
   return (
     <div className={className}>
       {imagenes.map((imagen, index) => (
-        <img
+        <LazyImage
           key={index}
           src={imagen}
           alt={`Imagen ${index + 1}`}

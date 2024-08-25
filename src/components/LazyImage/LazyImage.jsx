@@ -22,11 +22,11 @@ const LazyImage = ({ src, alt, className, onLoad }) => {
   }, [src]);
 
   return (
-    <div>
+    <>
       {!loaded && <p>Cargando..</p>}{" "}
       {/* Muestra el componente de carga mientras la imagen se carga */}
       {loaded && <img src={src} alt={alt} className={className} />}
-    </div>
+    </>
   );
 };
 export default LazyImage;
