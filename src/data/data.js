@@ -2,12 +2,12 @@ import product1 from "../assets/product1.png";
 import product2 from "../assets/product2.png";
 import product3 from "../assets/product3.png";
 import product4 from "../assets/product4.png";
-import iconUbic from "../assets/iconUbic.svg"
-import iconTel from "../assets/iconWpFooter.svg"
-import iconMail from "../assets/iconEmail.svg"
-import fb from "../assets/fb.svg"
-import ig from "../assets/ig.svg"
-import lin from "../assets/in.svg"
+import iconUbic from "../assets/iconUbic.svg";
+import iconTel from "../assets/iconWpFooter.svg";
+import iconMail from "../assets/iconEmail.svg";
+import fb from "../assets/fb.svg";
+import ig from "../assets/ig.svg";
+import lin from "../assets/in.svg";
 
 export default {
   nuestraEmpresa: {
@@ -93,15 +93,15 @@ Hoy, "For Elise" cuenta con tres puntos de venta, manteniendo la esencia origina
     ],
     redes: [
       {
-        link: "",
+        link: "https://www.facebook.com/Foreliseconfiteria",
         icon: fb,
       },
       {
-        link: "",
+        link: "https://www.instagram.com/foreliseconfiteria/",
         icon: ig,
       },
       {
-        link: "",
+        link: "https://www.linkedin.com/company/for-elise-confiteria/",
         icon: lin,
       },
       /*         {
