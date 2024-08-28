@@ -10,23 +10,30 @@ import Mapa from "./sections/Mapa/Mapa";
 import QueresSerParte from "./sections/QueresSerParte/QueresSerParte";
 import Whatsapp from "./components/Whatsapp/Whatsapp";
 import Contacto from "./sections/Contacto/Contacto";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 function App() {
   return (
-    <div className="body">
-      <Whatsapp />
-      <Navbar />
-      <Carrusel/>
-      <NuestraEmpresa />
-      <Sabores />
-      <Historia />
-      <Productos />
-      <Sucursales />
-      <Mapa />
-      <QueresSerParte />
-      <Contacto />
-      <Footer />
-    </div>
+    <HelmetProvider>
+      <Helmet>
+        <html lang="es" />
+
+      </Helmet>
+      <div className="body">
+        <Whatsapp />
+        <Navbar />
+        <Carrusel />
+        <NuestraEmpresa />
+        <Sabores />
+        <Historia />
+        <Productos />
+        <Sucursales />
+        <Mapa />
+        <QueresSerParte />
+        <Contacto />
+        <Footer />
+      </div>
+    </HelmetProvider>
   );
 }
 

@@ -8,7 +8,6 @@ const loadingSlice = createSlice({
   },
   reducers: {
     startLoading: (state, action) => {
-      console.log("startLoading", action.payload);
       if (action.payload !== undefined) {
         const { src, alt } = action.payload;
         if (!state.loadingImages[src]) {
@@ -18,8 +17,6 @@ const loadingSlice = createSlice({
       }
     },
     stopLoading: (state, action) => {
-      console.log("stopLoading", action.payload);
-
       const { src } = action.payload;
       if (state.loadingImages[src]) {
         state.loadingCount -= 1;
