@@ -10,7 +10,7 @@ const LogoSVG = ({ className }) => (
 
 const Loading = () => {
   return (
-    <div className="flex items-center justify-center h-screen z-10">
+    <div className="flex items-center justify-center h-screen w-screen fixed bg-fondoBlanco z-50">
       <span className="relative flex h-36 w-36">
         <span className="animate-ping-2 absolute h-full w-full rounded-full bg-fondoMarron opacity-75"></span>
         <span className="relative flex items-center justify-center rounded-full h-36 w-36 bg-fondoMarron">
