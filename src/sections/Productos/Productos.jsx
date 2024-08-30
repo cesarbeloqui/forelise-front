@@ -49,7 +49,7 @@ const Productos = () => {
 
           <div className="flex justify-center mt-8 col-span-2 sm:col-span-2 sm:col-start-1 lg:col-span-2 lg:col-start-2">
             <a
-              href="https://docs.google.com/spreadsheets/d/1qSa16uloLnK0pwb4CeeTtM3jOKvw9WmFBc1cKj3OjN4"
+              href="https://drive.google.com/file/d/1m9ZfQCvHQbWl1MaRj2jJfEMw6y5HFn8e"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full"

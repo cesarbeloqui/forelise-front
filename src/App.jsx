@@ -11,6 +11,7 @@ import QueresSerParte from "./sections/QueresSerParte/QueresSerParte";
 import Whatsapp from "./components/Whatsapp/Whatsapp";
 import Contacto from "./sections/Contacto/Contacto";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import ComponentPrueba from "./components/ComponentPrueba"
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <QueresSerParte />
         <Contacto />
         <Footer />
+{/*         <ComponentPrueba /> */}
       </div>
     </HelmetProvider>
   );
