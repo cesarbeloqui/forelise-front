@@ -83,7 +83,7 @@ Hoy, "For Elise" cuenta con tres puntos de venta, manteniendo la esencia origina
       {
         titulo: "+54 9 2216 68 5672",
         icon: iconTel,
-        href: "https://wa.me/5492216685672",
+        href: "https://wa.me/5492216685672?text=Hola!%20Te%20escribo%20desde%20la%20web,%20quisiera%20consultarles%20",
       },
       {
         titulo: "info@confiteriaforelise.com",

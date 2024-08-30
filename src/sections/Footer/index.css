@@ -41,3 +41,12 @@
     justify-content: center;
   }
 }
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container>* {
+  margin: 0;
+  padding: 0;
+}
