@@ -28,7 +28,7 @@ const Productos = () => {
         <h2 className="text-3xl font-medium mb-8 text-left ml-4 pr-24 text-letraMarron   border-naranjaBotonYSubProductos border-double inline-block border-b-4">
           Productos
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4 lg:gap-8 gap-2 px-4">
           {products.map((product) => (
             <div
               key={product.title}
@@ -47,7 +47,7 @@ const Productos = () => {
             </div>
           ))}
 
-          <div className="flex justify-center mt-8 col-span-1 sm:col-span-2 sm:col-start-1 lg:col-span-2 lg:col-start-2">
+          <div className="flex justify-center mt-8 col-span-2 sm:col-span-2 sm:col-start-1 lg:col-span-2 lg:col-start-2">
             <a
               href="https://docs.google.com/spreadsheets/d/1qSa16uloLnK0pwb4CeeTtM3jOKvw9WmFBc1cKj3OjN4"
               target="_blank"
