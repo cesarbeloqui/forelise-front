@@ -6,9 +6,19 @@ import product3 from "../../assets/3.png";
 import product4 from "../../assets/4.png";
 import product5 from "../../assets/5.png";
 import product6 from "../../assets/6.png";
+import slider1 from "../../assets/slider1.png";
+import slider2 from "../../assets/slider2.png";
+import slider1Formato2 from "../../assets/slider1Formato2.png"
+import slider2Formato2 from "../../assets/slider2Formato2.png"
 import PropTypes from "prop-types";
 import { useState, lazy, useEffect } from "react";
 import LazyImage from "@/components/LazyImage/LazyImage";
+
+const opcion1 = [product1, product2, product3, product4, product5, product6]
+const opcion2 = [slider1, slider2]
+const opcion3 = [slider1Formato2, slider2Formato2]
+const opcion4 = true /* formato escritorio pero en movil */
+
 
 const customTheme = {
   scrollContainer: {
@@ -23,7 +33,7 @@ const customTheme = {
 
 // Extracción de las imágenes
 const IMAGES2 = {
-  mobile: [product1, product2, product3, product4, product5, product6],
+  mobile: opcion3,
   slider1: [product1, product2, product3],
   slider2: [product4, product5, product6],
 };
@@ -70,7 +80,10 @@ const Carrusel = ({ images }) => {
           className="relative flex w-full"
         />
       ) : (
-        <ImageCarouselMovil images={IMAGES2} />
+        !opcion4 ? (<ImageCarouselMovil images={IMAGES2} />) : <ImageCarousel
+          images={[IMAGES2.slider1, IMAGES2.slider2]}
+          className="relative flex w-full"
+        />
       )}
     </>
   );
